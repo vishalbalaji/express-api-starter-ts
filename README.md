@@ -1,6 +1,8 @@
 # Express API Starter with Typescript
 
-Forked from [w3cj/express-api-starter-ts](https://github.com/w3cj/express-api-starter-ts). Please refer to the `README.md` in the in the [main](/main) branch for any updates to this file.
+Forked from [w3cj/express-api-starter-ts](https://github.com/w3cj/express-api-starter-ts). Please refer to the [README file in the main branch](../main/README.md)  for any updates to this repo.
+
+# Original README
 
 How to use this template:
 
