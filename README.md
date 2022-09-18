@@ -1,5 +1,7 @@
 # Express API Starter with Typescript
 
+Forked from [w3cj/express-api-starter-ts](https://github.com/w3cj/express-api-starter-ts). Please refer to the `README.md` in the in the [main](/main) branch for any updates to this file.
+
 How to use this template:
 
 ```sh
