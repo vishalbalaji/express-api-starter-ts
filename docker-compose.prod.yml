@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  api:
+    container_name: express-api
+    build:
+      context: .
+      target: prod
+    ports:
+      - "5000:5000"
+    environment:
+      NODE_ENV: production

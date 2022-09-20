@@ -1,0 +1,8 @@
+node_modules/
+Dockerfile
+dist
+README.md
+docker-compose*
+.env*
+.git*
+pnpm-lock.yaml*
