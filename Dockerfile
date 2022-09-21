@@ -1,4 +1,4 @@
-FROM node:18 AS base
+FROM node:alpine AS base
 WORKDIR /app
 COPY package.json ./
 RUN npm install
@@ -11,6 +11,6 @@ CMD [ "npm", "run", "dev" ]
 
 FROM base AS prod
 RUN npm run build
-RUN npm install --omit="dev"
+RUN npm install --omit=dev
 RUN npm install -g pm2
 CMD [ "pm2-runtime", "dist/index.js" ]
