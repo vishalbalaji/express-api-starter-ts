@@ -20,7 +20,7 @@ services:
     # other settings
 ```
 
-> NOTE: This config is made with a development environment in mind and the following instructions as written as such as it may not be very wise to deploy with a container running inside a db.
+> NOTE: This config is made with a development environment in mind and the following instructions as written as such.
 
 ## Environment Variables
 
