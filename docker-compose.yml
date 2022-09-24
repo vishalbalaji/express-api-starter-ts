@@ -3,7 +3,7 @@ services:
   db:
     extends:
       file: docker-compose.db.yml
-      service: mongo
+      service: postgres
     env_file: .env
   api:
     extends:
