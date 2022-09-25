@@ -42,6 +42,8 @@ DB_NAME=sampledb
 
 In addition to these, 3 more variables are configured based on the above variables to form connection strings for each db. It is done so with the help of [dotenv-expand](https://www.npmjs.com/package/dotenv-expand), so updating the above mentioned variables should automatically update the connection strings when running the API.
 
+> NOTE: `DB_USERNAME` is irrelevant for the `mysql` service as it requires the user to have root permissions and any newly created user won't. It is much simpler to just use the `root` user to access the DB and hence it is configured to just do so by default..
+
 ## Volume Management
 
 The data of each DB is persisted using docker volumes, called `postgres-data`, `mysql-data` and `mongo-data` that map to the actual data directories within the containers. A new docker volume will be created for each DB config.
