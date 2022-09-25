@@ -20,10 +20,8 @@ services:
     ports:
       - ${DB_PORT:-3306}:3306
     environment:
-      MYSQL_USER: ${DB_USERNAME:-mysqluser}
-      MYSQL_PASSWORD: ${DB_PASSWORD:-mysqlpassword}
       MYSQL_DATABASE: ${DB_NAME:-sampledb}
-      MYSQL_ROOT_PASSWORD: mysqlpassword
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD:-mysqlpassword}
   mongo:
     image: mongo
     restart: always
