@@ -4,7 +4,6 @@ services:
     extends:
       file: docker-compose.db.yml
       service: postgres
-    env_file: .env
   api:
     extends:
       file: docker-compose.prod.yml
