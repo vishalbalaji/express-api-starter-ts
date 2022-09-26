@@ -4,8 +4,8 @@
   "description": " A basic starter for an express.js API with Typescript",
   "main": "src/index.ts",
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "dev": "nodemon src/index.ts",
+    "start": "ts-node -r tsconfig-paths/register src/index.ts",
+    "dev": "nodemon --require tsconfig-paths/register src/index.ts",
     "build": "tsc",
     "test": "jest"
   },
@@ -36,6 +36,7 @@
     "supertest": "^6.2.4",
     "ts-jest": "^28.0.8",
     "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.0",
     "typescript": "^4.7.4"
   }
 }
