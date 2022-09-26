@@ -20,3 +20,4 @@ volumes:
   postgres-data:
   mysql-data:
   mongo-data:
+  mongo-config:
