@@ -9,9 +9,6 @@
     "start": "ts-node -r tsconfig-paths/require src/index.ts",
     "dev": "nodemon -r tsconfig-paths/require src/index.ts",
     "build": "tsc && tsc-alias",
-    "start": "ts-node src/index.ts",
-    "dev": "nodemon src/index.ts",
-    "build": "tsc",
     "lint": "eslint --fix src test",
     "test": "jest"
   },
