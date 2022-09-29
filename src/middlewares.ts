@@ -17,3 +17,12 @@ export function errorHandler(err: Error, req: Request, res: Response<ErrorRespon
     stack: process.env.NODE_ENV === 'production' ? '🥞' : err.stack,
   });
 }
+
+export function isAuthenticated(req: Request, res: Response, next: NextFunction) {
+  if (!req.isAuthenticated()) {
+    res.status(401);
+    const error = new Error('Unauthorized');
+    next(error);
+  }
+  return next();
+}
