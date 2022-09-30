@@ -13,3 +13,4 @@ Finally, the `/emojis` route in the base API is now locked for unauthorized, jus
 For more information on passport and its various strategies, refer to these following docs:
 * [passport-api-docs](https://github.com/jwalton/passport-api-docs)
 * [Official Passport.js docs](https://www.passportjs.org/docs/) 
+* [Walkthrough: Using Passport Local Strategy](https://www.youtube.com/watch?v=Jo8L8pru6ZI) on Youtube
