@@ -32,7 +32,7 @@ passport.use(new passportLocal.Strategy({
   let user;
 
   try {
-    [user] = db.filter((user) => user.name === name);
+    [user] = db.filter((item) => item.name === name);
 
     if (!user) return next(null, { id: null })
   } catch (error) {
