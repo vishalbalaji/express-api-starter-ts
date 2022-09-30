@@ -5,7 +5,7 @@ import bcrypt from 'bcrypt';
 const passport = new Passport();
 
 // Fake DB.
-// Important: Not to be used production. Or even development, for that matter.
+// Important: Not to be used for production. Or even development, for that matter.
 // Replace with your own DB.
 const db = [
   { id: 1, name: 'abed', password: bcrypt.hashSync('cougartown', 6) },
@@ -32,6 +32,7 @@ passport.use(new passportLocal.Strategy({
   let user;
 
   try {
+    // Get the user from DB here.
     [user] = db.filter((item) => item.name === name);
 
     if (!user) return next(null, { id: null })
@@ -47,6 +48,7 @@ passport.use(new passportLocal.Strategy({
 }
 ));
 
+// Replace fake DB calls with real DB calls in these 2 functions as well.
 passport.serializeUser((user, next) => next(null, user.id));
 passport.deserializeUser((user_id: Number, next) => next(null, db.filter((item) => item.id === user_id)[0]));
 
