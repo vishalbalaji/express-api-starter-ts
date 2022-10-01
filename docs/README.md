@@ -14,27 +14,32 @@ The `--no-edit` here is optional and is there so that you don't have to add in a
 
 One downside of this merge approach is that since not all the lines in `package.json` end with a comma, depending on what order you merge the branches, the `package.json` file may break. To get around this, you can either manually go in and fix it or use a tool called [jsonrepair](https://www.npmjs.com/package/jsonrepair). 
 
-To use jsonrepair, you will need to install it manually before using it as you cannot use npx with a broken `package.json`. You can do this using:
+To use jsonrepair, you will need to install it globally before using it as you cannot use npx with a broken `package.json`. You can do this using:
 
 ```sh
 npm i -g jsonrepair
 jsonrepair --overwrite package.json
 ```
 
-Finally, if you are as neurotic as me and need your dependencies and dev dependencies in alphabetical order, you can do so using [sort-package-json](https://www.npmjs.com/package/sort-package-json) as follows:
+If you are as neurotic as me and need your dependencies and dev dependencies in alphabetical order, you can do so using [sort-package-json](https://www.npmjs.com/package/sort-package-json) as follows:
 
 ```sh
 npx sort-package-json
 ```
 
-You can run the API with `npm`, `yarm` or `pnpm` by using the following commands:
+You can install dependencies and run the API with `npm`, `yarm` or `pnpm` by using the following commands:
 
 ```sh
 # With npm
+npm install
 npm run dev
+
 # With yarn
+yarn install
 yarn run dev
+
 # With pnpm
+pnpm install
 pnpm run dev
 ```
 
@@ -75,7 +80,7 @@ The repos in this branch are split into 3 main categories: `lint`, `db` and `aut
 
 ### Auth
 
-* `auth-passport`: Basic Passport.js configuration for Authentication.
+* `auth-passport`: Basic Passport.js configuration for authentication.
 
 
 ## Some Notes
