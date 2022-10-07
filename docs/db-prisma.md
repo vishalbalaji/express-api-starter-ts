@@ -1,6 +1,6 @@
 # Prisma Configuration
 
-This branch is configured with Prisma. For more information on Prisma, visit: [prisma.io](https://www.prisma.io/).
+This branch is configured with Prisma. For more information on Prisma, visit: [prisma.io](https://www.prisma.io/). This branch also extends from the `db-base` branch and contains its DB docker configurations.
 
 ## Base Configuration
 
