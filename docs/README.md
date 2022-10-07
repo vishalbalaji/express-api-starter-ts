@@ -4,7 +4,7 @@ This repo contains a base [Express.js](https://www.npmjs.com/package/express) AP
 
 ## Usage
 
-Clone this repo locally and merge in any of the branches that you want into the main branch. For example, you can merge the branch `lint-airbnb`, using the following command:
+Clone this repo locally and merge in any of the branches that you want into the `main` branch. For example, you can merge the branch `lint-airbnb`, using the following command:
 
 ```sh
 git merge --no-edit --no-ff lint-airbnb
