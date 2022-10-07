@@ -32,6 +32,12 @@ For no-SQL DBs like MongoDB, data needs to be pushed using the following command
 npx prisma db push
 ```
 
+You can also view and manage the DB using [Prisma Studio](https://www.prisma.io/studio) by running:
+
+```sh
+npx prisma studio
+```
+
 For more information on Prisma migrations, refer to: [https://www.prisma.io/docs/concepts/components/prisma-migrate/get-started](https://www.prisma.io/docs/concepts/components/prisma-migrate/get-started).
 
 ## Using Prisma
