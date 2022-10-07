@@ -77,10 +77,15 @@ The repos in this branch are split into 3 main categories: `lint`, `db` and `aut
 
 * `db-base`: MongoDB, PostgresSQL and MySQL configured using Docker and Docker Compose.
 * `db-prisma`: Basic configuration of the Prisma ORM.
+* `db-knex`: *To be implemented.*
+* `db-typeorm`: *To be implemented.*
+* `db-mongoose`: *To be implemented.*
+* `db-objection`: *To be implemented.*
 
 ### Auth
 
 * `auth-passport`: Basic Passport.js configuration for authentication.
+* `auth-grant`: *To be implemented.* 
 
 
 ## Some Notes
