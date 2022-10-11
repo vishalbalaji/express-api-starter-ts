@@ -9,14 +9,14 @@ const hello =
       () => {
         return { message: 'Hi there!' };
       }
-    )
+    );
 
 const endpoints = {
   hello,
-}
+};
 
-const appRouter = t.router(endpoints)
-
-export default trpcExpress.createExpressMiddleware({ router: appRouter })
+const appRouter = t.router(endpoints);
 
 export type AppRouter = typeof appRouter;
+
+export default trpcExpress.createExpressMiddleware({ router: appRouter });
