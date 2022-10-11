@@ -87,6 +87,9 @@ The repos in this branch are split into 3 main categories: `lint`, `db` and `aut
 * `auth-passport`: Basic Passport.js configuration for authentication.
 * `auth-grant`: *To be implemented.* 
 
+### Other Utilities
+
+* `util-trpc`: Base configuration with [tRPC](https://trpc.io/).
 
 ## Some Notes
 
