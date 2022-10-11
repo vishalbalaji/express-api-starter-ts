@@ -4,11 +4,17 @@ This branch is configured with Prisma. For more information on Prisma, visit: [p
 
 ## Base Configuration
 
-The packages [prisma](https://www.npmjs.com/package/prisma)  and [@prisma/client](https://www.npmjs.com/package/@prisma/client) are installed and Prisma is initialized with `npx prisma init`. Additionally, [zod](https://www.npmjs.com/package/zod) is installed for schema validation.
+The packages [prisma](https://www.npmjs.com/package/prisma)  and [@prisma/client](https://www.npmjs.com/package/@prisma/client) are installed and Prisma is initialized with `npx prisma init`.
 
 The base configuration can be found in [prisma/schema.prisma](../prisma/schema.prisma). By default, it is set to connect to PostgresSQL with the `POSTGRES_URL` environment variable as its connection string. To connect to other types of databases, refer to [https://www.prisma.io/docs/reference/database-reference/connection-urls](https://www.prisma.io/docs/reference/database-reference/connection-urls). A simple example model called `User` is also set up in the [schema.prisma](../prisma/schema.prisma) file.
 
 Finally, the [src/utils/db.ts](../src/utils/db.ts) file exports an instance of `PrismaClient` so that unnecessary connections to the DB can be avoided.
+
+Additionally, it is recommended that [zod](https://www.npmjs.com/package/zod) is installed for schema validation:
+
+```sh
+npm install zod
+```
 
 ## Push and Pull from the DB
 
